@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
                 "html:target/default-html-reports.html",
                 "rerun:target/rerun.txt"},
         features = "src/test/resources/features",
-        glue = "com/krafttech/step_definitions",
+        glue = "com/krattech/step_definitions",
         dryRun = false,
-        tags = ""
+        tags = "@wip"
                 )
 
 public class CukesRunner {
