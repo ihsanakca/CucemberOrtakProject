@@ -39,4 +39,8 @@ public abstract class BasePage {
     public String getAccountName_mtd(String accountName) {
         return Driver.get().findElement(By.xpath("//span[.='" + accountName + "']")).getText();
     }
+
+    public String getSubtitle(String moduleName){
+        return Driver.get().findElement(By.xpath("//li[.='"+moduleName+"']")).getText();
+    }
 }
