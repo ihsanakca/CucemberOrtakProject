@@ -51,8 +51,8 @@ public class zaferHocaStepDefs {
         iframePage.closeIframes();
         Driver.get().switchTo().defaultContent();
     }
-    @Then("The user verify that all tabs are closed")
-    public void the_user_verify_that_all_tabs_are_closed() {
+    @Then("The user navigate to back and verify the current URL")
+    public void The_user_navigate_to_back_and_verify_the_current_URL() {
         Driver.get().navigate().back();
         String actualURL = Driver.get().getCurrentUrl();
         String expectedURL="https://www.krafttechexlab.com/index";

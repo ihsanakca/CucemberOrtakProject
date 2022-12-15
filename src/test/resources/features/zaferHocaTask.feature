@@ -8,7 +8,7 @@ Feature: Zafer Hoca Task
     When The user navigate to "<Tabs>" "<modules>"
     Then The user verfiy that "<moduleSubtitle>"
     When The user should close all tabs
-    Then The user verify that all tabs are closed
+    Then The user navigate to back and verify the current URL
 
     Examples:
       | userEmail        | password | relatedPage | Tabs       | modules | moduleSubtitle |
