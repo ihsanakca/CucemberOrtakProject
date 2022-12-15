@@ -1,6 +1,6 @@
+@wip
 Feature: Zafer Hoca Task
 
-  @wip
   Scenario Outline: Tabs_Modules_Task
     Given The user is on the Login Page
     When The user input valid credentials to "<userEmail>" and "<password>" bars
@@ -8,8 +8,9 @@ Feature: Zafer Hoca Task
     When The user navigate to "<Tabs>" "<modules>"
     Then The user verfiy that "<moduleSubtitle>"
     When The user should close all tabs
-    Then The user verify that all tabs are closed
-
+    Then The user navigate to back and verify the current URL
     Examples:
       | userEmail        | password | relatedPage | Tabs       | modules | moduleSubtitle |
       | sgezer@gmail.com | 12345678 | Dashboard   | Components | Iframe  | Iframe         |
+
+
