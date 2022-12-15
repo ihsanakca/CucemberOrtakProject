@@ -13,3 +13,4 @@ Feature: Zafer Hoca Task
     Examples:
       | userEmail        | password | relatedPage | Tabs       | modules | moduleSubtitle |
       | sgezer@gmail.com | 12345678 | Dashboard   | Components | Iframe  | Iframe         |
+
