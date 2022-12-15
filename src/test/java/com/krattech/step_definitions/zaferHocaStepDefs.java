@@ -24,6 +24,9 @@ public class zaferHocaStepDefs {
     public void the_user_input_valid_credentials_to_and_bars(String userEmail, String password) {
         LoginPages loginPages = new LoginPages();
         loginPages.loginWithParameter(userEmail, password);
+        if (userEmail.equals("")) {
+            System.out.println("email eksiktir..");
+        }
     }
 
     @Then("The user verify that on the {string} page")
