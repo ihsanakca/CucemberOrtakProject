@@ -17,10 +17,12 @@ public abstract class BasePage {
 
         BrowserUtils.waitForClickablility(By.xpath(tabLocator), 5);
         WebElement tabElement = Driver.get().findElement(By.xpath(tabLocator));
-        tabElement.click();
+        BrowserUtils.clickWithJS(tabElement);
+        //tabElement.click();
         if (!module.isEmpty()) {
             BrowserUtils.waitForClickablility(By.xpath(moduleLocator), 5);
-            Driver.get().findElement(By.xpath(moduleLocator)).click();
+            WebElement modElement = Driver.get().findElement(By.xpath(moduleLocator));
+            BrowserUtils.clickWithJS(modElement);
         }
 
     }
