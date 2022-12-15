@@ -1,6 +1,7 @@
 package com.krattech.pages;
 
 import com.krattech.utilities.BrowserUtils;
+import com.krattech.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -26,5 +27,9 @@ public class IframePage extends BasePage {
         closeRight_loc.click();
         BrowserUtils.waitFor(2);
         closeLeft_loc.click();
+
+    }
+    public String getIframeCurrentURL(){
+        return Driver.get().getCurrentUrl();
     }
 }
