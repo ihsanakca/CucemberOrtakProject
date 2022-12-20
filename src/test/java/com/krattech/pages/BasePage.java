@@ -46,7 +46,14 @@ public abstract class BasePage {
         return Driver.get().findElement(By.xpath("//li[.='"+moduleName+"']")).getText();
     }
 
+
     public void getName(){
         System.out.println("Mustafa");
+        }
+
+    public void getNames(){
+
+        System.out.println("zafer");
+ 
     }
 }
