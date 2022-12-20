@@ -47,18 +47,22 @@ public abstract class BasePage {
     }
 
     public void getName(){
+        System.out.println("ihsan");
+    }
+
+    public void getName1(){
         System.out.println("yaşar");
 }
 
 
-    public void getName(){
+    public void getName2(){
         System.out.println("Mustafa");
         }
 
     public void getNames(){
 
         System.out.println("zafer");
- 
+
 
     }
 }
