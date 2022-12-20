@@ -45,11 +45,4 @@ public abstract class BasePage {
     public String getSubtitle(String moduleName){
         return Driver.get().findElement(By.xpath("//li[.='"+moduleName+"']")).getText();
     }
-
-
-
-
-
-
-
 }
